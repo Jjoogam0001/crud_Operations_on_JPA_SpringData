@@ -16,6 +16,7 @@ public class RecipeIngredient {
     private Ingredient ingredient;
     @Column(length = 100)
     private double amount;
+
     private Measurement measurement;
     @ManyToOne
     private Recipe recipe;
@@ -23,7 +24,7 @@ public class RecipeIngredient {
     public RecipeIngredient() {
     }
 
-    public RecipeIngredient(int recipeIngredientId, Ingredient ingredient, double amount, Measurement measurement, Recipe recipe) {
+    public RecipeIngredient(int recipeIngredientId, Ingredient ingredient, double amount, Measurement measurement) {
         this.recipeIngredientId = recipeIngredientId;
         this.ingredient = ingredient;
         this.amount = amount;

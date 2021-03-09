@@ -69,6 +69,6 @@ public class RecipeRepository implements RecipeDao {
                 .createQuery("SELECT s FROM Recipe s WHERE UPPER(s.recipeName) = UPPER(?1)", Recipe.class)
                 .setParameter(1, name)
                 .getResultList();
-    };
+    }
 
 }

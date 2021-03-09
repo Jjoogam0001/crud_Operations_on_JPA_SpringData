@@ -22,12 +22,12 @@ public class Recipe {
     public Recipe() {
     }
 
-    public Recipe(int recipeId, String recipeName, List<RecipeIngredient> recipeIngredients, RecipeInstructions recipeInstructions, List<RecipeCategory> recipeCategories) {
+    public Recipe(int recipeId, String recipeName, List<RecipeIngredient> recipeIngredients, RecipeInstructions recipeInstructions) {
         this.recipeId = recipeId;
         this.recipeName = recipeName;
         this.recipeIngredients = recipeIngredients;
         this.recipeInstructions = recipeInstructions;
-        this.recipeCategories = recipeCategories;
+
     }
 
 
