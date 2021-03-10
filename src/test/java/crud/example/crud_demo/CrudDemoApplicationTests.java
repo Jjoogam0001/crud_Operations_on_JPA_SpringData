@@ -1,10 +1,15 @@
 package crud.example.crud_demo;
 
+import Repository.RecipeRepository;
 import org.junit.jupiter.api.Test;
+
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
+
 
 @SpringBootTest
-class CrudDemoApplicationTests {
+
+public class CrudDemoApplicationTests {
 
     @Test
     void contextLoads() {
